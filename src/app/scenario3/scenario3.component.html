@@ -1,0 +1,8 @@
+
+<label>
+	Open the console to see Text
+</label>
+<input type="text" #myinput ><br><br>
+<button (click)=log(myinput.value)>Click me</button>
+
+<app-child [parentdata]="name"></app-child>
