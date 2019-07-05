@@ -1,45 +1,34 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-
+import {ServiceService} from '../app/service.service';
+import  {Scenario1Module} from '../app/scenario1/scenario1.module';
+import  {Scenario2Module} from '../app/scenario2/scenario2.module';
+import  {Scenario3Module} from '../app/scenario3/scenario3.module';
+import  {Scenario4Module} from '../app/scenario4/scenario4.module';
+import {Scenario5Module} from '../app/scenario5/scenario5.module';
+import {Scenario6Module} from '../app/scenario6/scenario6.module';
+import {Scenario7Module} from '../app/scenario7/scenario7.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Scenario1Component } from './scenario1/scenario1.component';
-import { Scenario2Component } from './scenario2/scenario2.component';
-import { Scenario3Component } from './scenario3/scenario3.component';
-import { Scenario4Component } from './scenario4/scenario4.component';
-import { ChildComponent } from './scenario3/child/child.component';
-import { Child1Component } from './scenario4/child1/child1.component';
-import { Scenario5Component } from './scenario5/scenario5.component';
-import { ParentComponent } from './scenario5/parent/parent.component';
-import { Child2Component } from './scenario5/child2/child2.component';
-import { Component1Component } from './scenario6/component1/component1.component';
-import { Component2Component } from './scenario6/component2/component2.component';
-import { Component3Component } from './scenario6/component3/component3.component';
-
 
 @NgModule({
   declarations: [
-    AppComponent,
-    Scenario1Component,
-    Scenario2Component,
-    Scenario3Component,
-    Scenario4Component,
-    ChildComponent,
-    Child1Component,
-    Scenario5Component,
-    ParentComponent,
-    Child2Component,
-    Component1Component,
-    Component2Component,
-    Component3Component  
+    AppComponent,  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    Scenario1Module,
+    Scenario2Module,
+    Scenario3Module,
+    Scenario4Module,
+    Scenario5Module,
+    Scenario6Module,
+    Scenario7Module,
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
